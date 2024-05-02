@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+    
+var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-=_+';
+var str_len = str.length;
+
+var pass = "";
+
+function gen_pass(){
+    for (var i =0 ; i <= 8; i++){
+    var random = Math.round(Math.random()*str.length)
+    pass = pass + str[random]
+}
+console.log(pass)
+}
+gen_pass()
+
+
+
+    </script>
+</body>
+</html>
